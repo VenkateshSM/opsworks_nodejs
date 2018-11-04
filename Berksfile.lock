@@ -1,0 +1,25 @@
+DEPENDENCIES
+  opsworks_nodejs
+    path: .
+    metadata: true
+
+GRAPH
+  ark (4.0.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  build-essential (8.2.1)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  git (9.0.1)
+    build-essential (>= 5.0.0)
+  mingw (2.1.0)
+    seven_zip (>= 0.0.0)
+  nodejs (6.0.0)
+    ark (>= 2.0.2)
+    build-essential (>= 5.0)
+  opsworks_nodejs (0.1.0)
+    git (~> 9.0.1)
+    nodejs (~> 6.0.0)
+  seven_zip (3.0.0)
+    windows (>= 0.0.0)
+  windows (5.1.3)

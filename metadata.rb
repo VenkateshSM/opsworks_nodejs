@@ -5,7 +5,7 @@ license 'MIT'
 description 'Installs/Configures opsworks_nodejs'
 long_description 'Installs/Configures opsworks_nodejs'
 version '0.1.0'
-chef_version '>= 12.0'
+chef_version '~> 12'
 depends 'git', '~> 9.0.1'
 depends 'nodejs', '~> 6.0.0'
 
