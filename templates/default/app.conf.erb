@@ -1,0 +1,16 @@
+description "Upstart Job for <%= @app['shortname'] %> service injected by AWS OpsWorks"
+
+start on (runlevel [345] and started network)  
+stop on (runlevel [!345] or stopping network)
+
+respawn limit 20 5
+
+<% @app['environment'].each do |name, value| %>
+env <%= name %>=<%= value %>
+<% end %>
+
+chdir /opt/<%= @app['app_id'] %>
+
+script  
+    exec npm start
+end script

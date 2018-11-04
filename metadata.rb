@@ -1,20 +1,14 @@
 name 'opsworks_nodejs'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'All Rights Reserved'
+maintainer 'Maksim Aniskov'
+maintainer_email 'MaksimAniskov@gmail.com'
+license 'MIT'
 description 'Installs/Configures opsworks_nodejs'
 long_description 'Installs/Configures opsworks_nodejs'
 version '0.1.0'
-chef_version '>= 13.0'
+chef_version '>= 12.0'
+depends 'git', '~> 9.0.1'
+depends 'nodejs', '~> 6.0.0'
 
-# The `issues_url` points to the location where issues for this cookbook are
-# tracked.  A `View Issues` link will be displayed on this cookbook's page when
-# uploaded to a Supermarket.
-#
-# issues_url 'https://github.com/<insert_org_here>/opsworks_nodejs/issues'
+issues_url 'https://github.com/maksimaniskov/opsworks_nodejs/issues'
 
-# The `source_url` points to the development repository for this cookbook.  A
-# `View Source` link will be displayed on this cookbook's page when uploaded to
-# a Supermarket.
-#
-# source_url 'https://github.com/<insert_org_here>/opsworks_nodejs'
+source_url 'https://github.com/maksimaniskov/opsworks_nodejs'
