@@ -12,5 +12,5 @@ env <%= name %>=<%= value %>
 chdir /opt/<%= @app['app_id'] %>
 
 script  
-    exec npm start
+    exec npm start >>/var/log/opsworks-app.<%= @app['app_id'] %>.log
 end script
