@@ -9,7 +9,7 @@ chef_version '~> 12'
 depends 'git', '~> 9.0.1'
 depends 's3_cli', '~> 1.0.2'
 depends 'zipfile', '~> 0.2.0'
-depends 'nodejs', '~> 6.0.0'
+depends 'nodejs', '~> 8.12.0'
 
 issues_url 'https://github.com/maksimaniskov/opsworks_nodejs/issues'
 
